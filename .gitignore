@@ -17,3 +17,6 @@ myenv/
 
 # plot images
 *.png
+
+# macOS finder attributes
+.DS_Store
