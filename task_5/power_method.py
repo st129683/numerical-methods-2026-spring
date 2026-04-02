@@ -1,6 +1,7 @@
 import numpy as np
 from tools import DELTA, RTOL
 
+
 def power_method(A):
     n = A.shape[0]
     z = np.ones(n)

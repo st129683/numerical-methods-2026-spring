@@ -1,6 +1,7 @@
 import numpy as np
 from tools import EPSILON, reduce_to_hessenberg, qr_decomposition_hessenberg
 
+
 def qr_algorithm(A):
     H = reduce_to_hessenberg(A)
     n = H.shape[0]

@@ -1,6 +1,7 @@
 import numpy as np
 from tools import DELTA, RTOL
 
+
 def inverse_power_step(A, sigma, z):
     n = A.shape[0]
     M = A - sigma * np.eye(n)
@@ -18,6 +19,7 @@ def inverse_power_step(A, sigma, z):
     mus = z[mask] / y[mask]
     sigma_new = sigma + np.mean(mus)
     return sigma_new, z_new, False
+
 
 def inverse_power_method_all(A, shifts):
     eigenpairs = []
