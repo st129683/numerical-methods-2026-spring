@@ -6,8 +6,8 @@ def f(x):
     return x**2 * np.cos(x)
 
 
-def generate_data():
-    x_base = np.linspace(-1, 1, 60)
+def generate_data(n):
+    x_base = np.linspace(-1, 1, n)
     x_data = []
     y_data = []
     for x in x_base:

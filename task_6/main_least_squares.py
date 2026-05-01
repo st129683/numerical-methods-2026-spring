@@ -5,7 +5,7 @@ import least_squares_orthogonal as lso
 
 
 def main():
-    x_data, y_data = generate_data()
+    x_data, y_data = generate_data(60)
     degrees = [1, 2, 3, 4, 5]
     sse_normal = []
     sse_orthogonal = []
